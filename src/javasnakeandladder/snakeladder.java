@@ -3,31 +3,31 @@ package javasnakeandladder;
 public class snakeladder {
 
 	public static void main(String[] args) {
-		int position = 0;
-		//System.out.println("position is " + position);
-		int dice=(int) (Math.random() * 10) % 6+1;
-			System.out.println("dice value is " + dice);
-		int type=(int) (Math.random() * 10) % 3+1;
-		System.out.println("case number is " + type);
-		 switch(type) {
-		   case 1:
-		   System.out.println( "No Play You are in the same position" );
-		   break;
-		  
-		   case 2:
-		   position = (position + dice);
-		   System.out.println( "your position after ladder is :" + position );
-		   break;
-		   
-		   case 3: 
-		   position = (position - dice);
-		  
-		  if(position<0){
-			  position = 0;
-		  }
-			 System.out.println( "Your Position after snake is" + position );
-		   break;
-		   }
-		    }
-		     }
-	
+		int Player = 0;
+		  while(Player<=99){
+			System.out.println("Player is at " + Player);
+			int Die=(int) (Math.random() * 10) % 6+1;
+			Player = (Player + Die);
+				System.out.println("Die value is " + Die);
+			int Condition =(int) (Math.random() * 10) % 3+1;
+			//System.out.println("case number is " + Condition);
+			 switch(Condition) {
+			   case 1:
+			   System.out.println( "No Play You in same Player" );
+			   break;
+			   case 2:
+			   Player = (Player + Die);
+			   System.out.println( "After ladder Player is at :" + Player );
+			   break;
+			   case 3: 
+			   Player = (Player - Die);
+			  
+			  if(Player<0){
+				  Player = 0;
+			  }
+				 System.out.println( "After snake Player is at :" + Player );
+			   break;
+			   }
+			    }
+			     }
+				  }
