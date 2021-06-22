@@ -3,9 +3,15 @@ package javasnakeandladder;
 public class snakeladder {
 
 	public static void main(String[] args) {
-	System.out.println("snake and ladder game");
+		int Position=0;
+		
+		
+		System.out.println("Welcome to Snake & Ladder Program Problem");
+		System.out.println("Your at Starting Position"+Position);
+		}
+	
 
 
 	}
 
-}
+
